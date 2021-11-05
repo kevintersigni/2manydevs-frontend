@@ -34,6 +34,7 @@ const Article = ({ article, categories }) => {
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
             <div>
+              {/* AJOUTER TEST AUTHOR */}
               {article.author.picture && (
                 <Image
                   image={article.author.picture}
