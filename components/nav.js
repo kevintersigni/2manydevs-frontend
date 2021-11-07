@@ -17,16 +17,18 @@ const Nav = ({ categories }) => {
         <div className="uk-navbar-right">
           <ul className="uk-navbar-nav">
             {categories.map((category) => {
-              return (
-                <li key={category.id}>
-                  <Link
-                    as={`/category/${category.slug}`}
-                    href="/category/[slug]"
-                  >
-                    <a className="uk-link-reset">{category.name}</a>
-                  </Link>
-                </li>
-              );
+              if (category.articles.length > 0) {
+                return (
+                  <li key={category.id}>
+                    <Link
+                      as={`/category/${category.slug}`}
+                      href="/category/[slug]"
+                    >
+                      <a className="uk-link-reset">{category.name}</a>
+                    </Link>
+                  </li>
+                );
+              }
             })}
           </ul>
         </div>

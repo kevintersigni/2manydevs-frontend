@@ -5,6 +5,7 @@ import Layout from "../../components/layout";
 import Image from "../../components/image";
 import Seo from "../../components/seo";
 import { getStrapiMedia } from "../../lib/media";
+import { DiscussionEmbed } from "disqus-react";
 
 const Article = ({ article, categories }) => {
   const imageUrl = getStrapiMedia(article.image);
@@ -55,6 +56,15 @@ const Article = ({ article, categories }) => {
               </p>
             </div>
           </div>
+          <DiscussionEmbed
+            shortname="2manydevs"
+            config={{
+              url: `http://localhost:3000/article/${article.slug}`,
+              identifier: article.slug,
+              title: article.title,
+              language: "fr",
+            }}
+          />
         </div>
       </div>
     </Layout>
