@@ -30,13 +30,13 @@ Backend / CMS Strapi 👉🏼   [par là](https://github.com/kevintersigni/2many
 - Catégories
 - Articles
 - Tags
-- Commentairtes
+- Commentaires avec [Disqus](https://disqus.com/)
 
 
 ## Skills & packages
 NextJS, React, Javascript, HTML, CSS.
 
-Strapi, PostgreSQL, Cloudinary, CKEditor5
+Strapi, PostgreSQL, Cloudinary, CKEditor5, Disqus.
 
 
 ## Installation
