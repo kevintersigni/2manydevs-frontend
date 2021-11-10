@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "ToyBlocks";
+  font-family: "Romantic";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("ToyBlocks"), url(/fonts/toyblocks.ttf) format("truetype");
+  src: local("Romantic"), url(/fonts/romantic.ttf) format("truetype");
 }
 
 a {
@@ -43,11 +43,11 @@ h1 {
   font-family: Staatliches;
 }
 
-/* .uk-navbar-container .uk-navbar-left a {
-  font-family: "Press Start 2P", cursive;
+.uk-navbar-container .uk-navbar-left a {
+  font-family: "Romantic";
+  font-size: 40px;
   text-transform: lowercase;
-  font-size: 60px;
-} */
+}
 
 img:hover {
   opacity: 1;
