@@ -1,4 +1,6 @@
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import rehypeSanitize from "rehype-sanitize";
 import Moment from "react-moment";
 import { fetchAPI } from "../../lib/api";
 import Layout from "../../components/layout";
@@ -31,7 +33,9 @@ const Article = ({ article, categories }) => {
       </div>
       <div className="uk-section">
         <div className="uk-container uk-container-small">
-          <ReactMarkdown>{article.content}</ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw, rehypeSanitize]}>
+            {article.content}
+          </ReactMarkdown>
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
             <div>

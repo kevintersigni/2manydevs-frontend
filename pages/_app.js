@@ -20,6 +20,10 @@ const MyApp = ({ Component, pageProps }) => {
           href="https://fonts.googleapis.com/css?family=Staatliches"
         />
         <link
+          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+          rel="stylesheet"
+        />
+        <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css"
         />
