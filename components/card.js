@@ -20,6 +20,13 @@ const Card = ({ article }) => {
             <p id="title" className="uk-text-large">
               {article.title}
             </p>
+            <p className="article-date">
+              {article.created_at
+                .substring(0, 10)
+                .split("-")
+                .reverse()
+                .join(".")}
+            </p>
           </div>
         </div>
       </a>
