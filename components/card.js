@@ -14,6 +14,9 @@ const Card = ({ article }) => {
             <p id="category" className="uk-text-uppercase">
               {article.category.name}
             </p>
+            <span id="tag" className="tag">
+              {article.tag.name}
+            </span>
             <p id="title" className="uk-text-large">
               {article.title}
             </p>
